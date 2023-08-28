@@ -5,12 +5,14 @@ import init from "../build/ascDebug.wasm?init"
 import './App.css'
 // import "./test.js"
 // import "./object.js"
-import "./memory.js"
+// import "./memory.js"
+// import "./script/golang"
+import "./script/rust"
 
 function App() {
   const [count, setCount] = useState(0)
   init().then((instance) => {
-    console.log(instance)
+    // console.log(instance)
     // const r = instance.exports.con();
     // console.log("Result:", r)
   })
